@@ -1,6 +1,6 @@
 ---
 - name: Register RHEL system using Red Hat account and register insights client
-  hosts: all
+  hosts: _hosts
   tasks:
     - name: Register Red Hat Enterprise Linux 8 using Red Hat account credentials
       # Content suggestion provided by Ansible Lightspeed
