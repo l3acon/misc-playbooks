@@ -1,6 +1,6 @@
 ---
 - name: Un-Register RHEL system using Red Hat account and register insights client
-  hosts: _hosts
+  hosts: "{{ _hosts }}"
   tasks:
     - name: Unregister system from insights-client
       # Content suggestion provided by Ansible Lightspeed

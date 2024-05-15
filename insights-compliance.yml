@@ -1,5 +1,5 @@
 - name: Manually kick off insights-compliance
-  hosts: _hosts
+  hosts: "{{ _hosts }}"
   tasks:
     - name: Run insights-client --compliance
       # Content suggestion provided by Ansible Lightspeed
