@@ -5,7 +5,7 @@
     - name: Unregister system from insights-client
       # Content suggestion provided by Ansible Lightspeed
       ansible.builtin.command:
-        cmd: /usr/sbin/insights-client --unregister --force
+        cmd: insights-client --unregister --force
       become: true
       become_user: root
       become_method: sudo
