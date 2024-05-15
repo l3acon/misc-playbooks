@@ -5,7 +5,7 @@
     - name: Register Red Hat Enterprise Linux 8 using Red Hat account credentials
       # Content suggestion provided by Ansible Lightspeed
       ansible.builtin.shell: |
-        subscription-manager register --username {{ rhel_username }} --password {{ rhel_password }} --auto-attach --force-register --enable insights-client
-      register: rhel_register_result
-      changed_when: rhel_register_result.rc == 0
-      failed_when: rhel_register_result.rc != 0 and rhel_register_result.rc != 257
+        subscription-manager register --username {{ rh_hcc_username }} --password {{ rh_hcc_password }} --auto-attach --force-register --enable insights-client
+      register: rhhcc_register_result
+      changed_when: rh_hcc_register_result.rc == 0
+      failed_when: rh_hcc_register_result.rc != 0 and rh_hcc_register_result.rc != 257
