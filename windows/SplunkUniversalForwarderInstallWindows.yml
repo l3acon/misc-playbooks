@@ -3,7 +3,7 @@
     hosts: all
     vars:
       splunk_working_directory: 'c:\Temp\Splunk\'
-      splunk_remote_file_share: 'https://download.splunk.com/products/universalforwarder/releases/9.2.2/windows/splunkforwarder-9.2.2-d76edf6f0a15-x64-release.msi'
+      splunk_remote_file_share: 'https://download.splunk.com/products/universalforwarder/releases/9.2.2/windows/'
       splunk_site: 'CORPORATE'
       splunk_install_path: 'c:\Program Files\SplunkUniversalForwarder\'
       splunk_deployment_server: 'your-deployment-server.yourdomain.com'
