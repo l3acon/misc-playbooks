@@ -1,0 +1,7 @@
+---
+- name: Execute some ansible
+  hosts: all
+  tasks:
+    - name: execute simple python
+      ansible.builtin.ping:
+
